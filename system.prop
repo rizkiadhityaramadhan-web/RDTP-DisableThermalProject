@@ -1,0 +1,31 @@
+# ============================================================
+# RizkiDisableThermalProject (RDTP) v2.3
+# system.prop — Thermal & Performance Properties
+# Target: Poco F6 (Peridot) / SD 8s Gen 3 / Android 16
+# HyperOS Vendor Base (Lunaris / Evolution X)
+# ============================================================
+
+# ── Disable Xiaomi/Qualcomm thermal HAL config loading ──────
+vendor.thermal.config=
+persist.vendor.thermal.config=
+persist.vendor.thermal.override.config=
+
+# ── Disable Qualcomm PowerHAL thermal interaction ───────────
+# (ro.vendor.extension_library dihapus agar CPU/GPU boost tetap jalan)
+vendor.perf.iop_v3.enable=false
+
+# ── Disable DFPS thermal-triggered refresh rate drop ────────
+ro.vendor.dfps.enable=false
+ro.vendor.smart_dfps.enable=false
+
+# ── Disable Xiaomi HyperOS thermal message integration ──────
+persist.sys.thermal.message=false
+
+# ── Qualcomm thermal-engine disable via prop ─────────────────
+persist.thermal.enable=false
+persist.thermal-engine.enable=false
+
+# ── Android framework thermal service disable ────────────────
+# (Android 11+ punya ThermalService di framework — nonaktifkan notifikasi)
+persist.sys.thermal_shutdown=false
+ro.thermal.control=false

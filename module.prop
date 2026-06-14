@@ -1,0 +1,8 @@
+id=rdtp-disable-thermal-universal
+name=RizkiDisableThermalProject (RDTP)
+version=v2.4
+versionCode=240
+author=Rizki Adhitya (TikTok: @kiistacy_)
+description=Disables thermal throttling stack for Poco F6 (Peridot/SD 8s Gen 3). Four-layer: sysfs, prop override, service kill, watchdog. Hardware emergency kill-switch. KSU Next + Magisk compatible, lightweight build.
+minMagisk=20400
+minKernelSU=11998
